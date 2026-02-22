@@ -1,0 +1,79 @@
+{
+  "editor.fontSize": 15.3,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "gitlens.codeLens.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "window.zoomLevel": 1.34,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "window.commandCenter": false,
+  "workbench.editor.empty.hint": "hidden",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.wordBasedSuggestions": "off",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.guides.bracketPairs": "active",
+  // Golang
+  "[go]": {
+    "editor.snippetSuggestions": "none",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  },
+  "gopls": {
+    "ui.semanticTokens": true,
+    "formatting.gofumpt": true,
+    "ui.diagnostic.staticcheck": true,
+    "ui.diagnostic.analyses": {
+      "unusedparams": true,
+      "shadow": true,
+      "nilness": true,
+      "unusedwrite": true,
+      "lostcancel": true,
+      "httpresponse": true,
+      "composites": true,
+      "loopclosure": true,
+      "bools": true,
+      "ST1020": false,
+      "ST1021": false,
+      "ST1022": false,
+      "ST1000": false,
+      "ST1003": false,
+      "ST1005": false
+    }
+  },
+  "go.editorContextMenuCommands": {
+    "compilerDetails": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.testFlags": [
+    "-v",
+    "-cover"
+  ],
+  "go.testEnvVars": {
+    "TESTING_WORKSPACE_DIR": "${workspaceFolder}"
+  },
+  // terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "MesloLGM NF",
+  "terminal.integrated.fontSize": 12,
+  "terminal.external.windowsExec": "wt",
+  "terminal.integrated.initialHint": false,
+  // copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "json": false
+  },
+}
