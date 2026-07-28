@@ -1,27 +1,39 @@
 {
+  // ===== Editor 編輯器 =====
   "editor.fontSize": 15.3,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.enablePreview": false,
-  "gitlens.codeLens.enabled": false,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.wordBasedSuggestions": "off",
   "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.enabled": true,
-  "window.zoomLevel": 1.34,
-  "git.confirmSync": false,
-  "git.ignoreRebaseWarning": true,
-  "window.commandCenter": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.aiStats.enabled": false,
+
+  // ===== Workbench / Window 介面 =====
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
   "workbench.editor.empty.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "window.zoomLevel": 1.4,
+  "window.commandCenter": false,
+
+  // ===== Files / Diff Editor =====
   "files.trimTrailingWhitespace": true,
   "diffEditor.ignoreTrimWhitespace": true,
-  "editor.wordBasedSuggestions": "off",
-  "editor.unicodeHighlight.nonBasicASCII": false,
-  "editor.guides.bracketPairs": "active",
-  // Golang
+
+  // ===== Git / GitLens =====
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+
+  // ===== Golang =====
   "[go]": {
     "editor.snippetSuggestions": "none",
     "editor.formatOnSave": true,
@@ -62,18 +74,17 @@
   "go.testEnvVars": {
     "TESTING_WORKSPACE_DIR": "${workspaceFolder}"
   },
-  // terminal
+
+  // ===== Terminal 終端機 =====
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "MesloLGM NF",
-  "terminal.integrated.fontSize": 12,
-  "terminal.external.windowsExec": "wt",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "terminal.integrated.fontSize": 12.5,
   "terminal.integrated.initialHint": false,
-  // copilot
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "json": false
-  },
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.external.windowsExec": "wt",
+
+  // ===== Chat / AI =====
+  "chat.viewSessions.orientation": "stacked"
 }
